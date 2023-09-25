@@ -1,0 +1,389 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+#main
+{
+    background:linear-gradient(to top, rgba(68, 65, 65, 0.5)50%,rgba(61, 59, 59, 0.5)50%),url(images/food1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.logo
+{
+    width: 130px;
+    height: 130px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.text
+{
+    text-align: center;
+    padding-top: 90px;
+}
+.text h1
+{
+    font-size: 150px;
+    font-family: cursive;
+    color:red;
+    
+}
+.text p
+{
+    color:greenyellow;
+    font-size: 45px;
+    font-size: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    
+
+}
+.btn
+{
+    margin: 70px auto 0;
+
+}
+.btn a
+{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: azure;
+    border: .5px solid white;
+    position: relative;
+    z-index: 1 ;
+
+}
+.btn a span
+{
+    width:0;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1 ;
+    background: white;
+    transition: 0.5s;
+}
+.btn a :hover span
+{
+    width: 100%;
+}
+#nav
+{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    transition: 0.5s;
+    background: red;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 50px 20px;
+
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: rgb(240, 235, 235);
+   
+}
+#menubtn
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right:30px ;
+    top:20px ;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img 
+{
+    width: 20px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 770px) {
+    .text h1
+{
+    font-size: 44px
+    
+}
+.btn a
+{
+    display: block;
+    margin: 20px auto;
+}
+
+}
+#Aboutus
+{
+    width: 100%;
+    padding: 70px 0 ;
+}
+.text1
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.text1 p
+{
+    margin: auto;
+    font-size: 30px;
+    color: rgb(201, 3, 3);
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.text1 p::after
+{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(red,white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+.aboutusbox
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.aboutbox
+{
+    flex-basis: 50%;
+}
+.aboutbox h1
+{
+    color: red;
+    font-family: 'Grey Qo', cursive;
+    font-size: 50px;
+}
+.aboutbox p
+{
+    font-size: 30px;
+    padding: 6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.imagebox
+{
+    flex-basis: 50%;
+    margin: auto;
+}
+.imagebox img
+{
+    width: 65%;
+    border-radius: 150px;
+}
+@media screen and (max-width: 770px){
+    .aboutbox h1
+{
+    color: red;
+    font-family: 'Grey Qo', cursive;
+    font-size: 100px;
+}
+.aboutbox
+{
+    flex-basis: 100%;
+}
+.imagebox
+{
+    flex-basis: 100%;
+    
+}
+.imagebox img
+{
+    width: 100%;
+    
+}
+
+}
+#services
+{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
+.servicebox
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.img2
+{
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 5px; 
+    position: relative;  
+}
+.img2 img
+{
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+.img2 a
+{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+}
+@media screen and (max-width: 770px){
+    .img2
+{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+      
+}
+}
+.blogsrow
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.blogscol
+{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.blogscol p 
+{
+    font-size: 20px;
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img
+{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user small
+{
+    color: skyblue;
+}
+.blogscol:hover
+{
+    transform: translateY(7px);
+}
+.footer1 
+{
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+}
+.footer1 a
+{
+    text-decoration: none;
+    color: red;
+}
+
+@media screen and (max-width: 770px)
+{
+    .blogscol{
+        flex-basis: 100%;
+    }
+}
+
+#footer
+{
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+.footerrow
+{
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.footerleft, .footerright
+{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 10px
+}
+.footerright
+{
+    text-align: right;
+}
+.footerrow h1
+{
+    margin: 10px 0 ;
+}
+.footerrow p
+{
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footerimg
+{
+    max-width: 300px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+
+}
+@media screen and (max-width: 770px)
+{
+    .footerleft, .footeright
+    {
+        flex-basis: 100%;
+        font-size: 15px;
+        padding-right: 20%;
+    }
+    .footerimg
+    {
+        top: 30%;
+    }
+    .footerleft
+    {
+        padding-right: 10%;
+    }
+}
